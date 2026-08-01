@@ -1,22 +1,103 @@
 aid: sazabi
 name: Sazabi
-description: Sazabi is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sazabi is an AI-native observability platform that helps engineering teams find
+  and fix production issues faster. Autonomous agents watch application logs
+  (stdout/stderr) to detect anomalies, unfamiliar errors, traffic spikes, and
+  failed deployments without traditional dashboards, then deliver contextual,
+  root-cause alerts into Slack and Microsoft Teams. Engineers investigate in
+  natural language by mentioning the Sazabi agent, and the platform can hand off
+  context to coding agents such as Claude, Cursor, and Codex or open pull requests
+  to remediate. Sazabi instruments 35+ hosting providers with no code changes and
+  exposes a hosted Sazabi MCP server so agents can query logs, inspect issues and
+  projects, and discover Sazabi tools. Founded by Sherwood Callaway; part of the
+  Y Combinator P26 (Spring 2026) batch; backed by an $8M seed round led by
+  J2 Ventures, Village Global, and Y Combinator, with an open beta.
 url: https://raw.githubusercontent.com/api-evangelist/sazabi/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://sazabi.com/opengraph-image.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
+- j2-ventures
+- village-global
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Observability
+- Monitoring
+- Artificial Intelligence
+- Agents
+- MCP
+- DevOps
+- Incident Response
+- Logging
 apis: []
+common:
+- type: Website
+  name: Sazabi Website
+  url: https://www.sazabi.com/
+- type: Documentation
+  name: Sazabi Documentation
+  url: https://docs.sazabi.com/
+- type: Blog
+  name: Sazabi Blog
+  url: https://www.sazabi.com/blog
+- type: SignUp
+  name: Request Access
+  url: https://sazabi.com
+- type: Login
+  name: Sazabi App
+  url: https://app.sazabi.com
+- type: Support
+  name: Contact Sazabi
+  url: https://www.sazabi.com/?contact=true
+- type: TermsOfService
+  name: Terms of Service
+  url: https://www.sazabi.com/legal/terms-of-service
+- type: PrivacyPolicy
+  name: Privacy Policy
+  url: https://www.sazabi.com/legal/privacy-policy
+- type: DataProcessingAgreement
+  name: Data Processing Addendum
+  url: https://www.sazabi.com/legal/data-processing-addendum
+- type: MCPServer
+  name: Sazabi MCP Server
+  url: mcp/sazabi-mcp.yml
+- type: LLMsTxt
+  name: Sazabi llms.txt
+  url: llms/sazabi-llms.txt
+- type: DomainSecurity
+  name: Domain Security Probe
+  url: security/sazabi-domain-security.yml
+- type: LinkedIn
+  name: Sazabi on LinkedIn
+  url: https://www.linkedin.com/company/sazabi
+- type: Twitter
+  name: Sazabi on X
+  url: https://x.com/sazabi
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

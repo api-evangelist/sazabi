@@ -1,0 +1,23 @@
+# Sazabi Documentation
+
+> Sazabi is an AI-native observability platform that helps developers find and fix production issues faster.
+
+## Agent Authentication
+
+This documentation site requires authentication for full access. To authenticate API requests, include the `x-docs-password` header:
+
+```
+curl -H "x-docs-password: <password>" https://docs.sazabi.com/llms.txt
+```
+
+Without authentication, only public pages are visible. Authenticated requests return the complete documentation tree including all internal guides and reference material.
+
+## Ecosystem
+
+### Integrations
+- [Integrating Sazabi with Slack](https://docs.sazabi.com/integrations/slack.md): Connect Sazabi to Slack so your team can investigate issues, receive notifications, chat with Sazabi via the Sazabi Slack app or Slackbot with the Sazabi MCP server, and share context without leaving Slack.
+- [Integrating Sazabi with Microsoft Teams](https://docs.sazabi.com/integrations/teams.md): Connect Sazabi to Microsoft Teams so your team can mention the Sazabi agent to investigate production issues and receive issue notifications in Teams channels.
+
+### MCP Connectors
+- [Langfuse MCP Connector](https://docs.sazabi.com/mcp/connectors/langfuse.md): Connect Sazabi to Langfuse through MCP to inspect LLM traces, observations, metrics, scores, comments, and prompts.
+- [Resend MCP Connector](https://docs.sazabi.com/mcp/connectors/resend.md): Connect Sazabi to Resend through MCP to send transactional emails and manage domains, contacts, and audiences.
