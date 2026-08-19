@@ -2,41 +2,33 @@ generated: '2026-07-21'
 method: searched
 status: published
 source: https://docs.sazabi.com/integrations/slack.md
-# Sazabi publishes a hosted "Sazabi MCP server" as its agent-facing surface.
-# It is documented (not a standalone public tool manifest): the Slack app /
-# Slackbot and Microsoft Teams agent use it to query the platform. There is no
-# public REST OpenAPI or published tool-schema list, so the tools below are the
-# capability categories described verbatim in the Sazabi docs, not invented
-# operation names.
 server:
   name: sazabi
-  description: >-
-    The Sazabi MCP server lets agents (e.g. Slackbot, the Sazabi Slack app, and
-    the Microsoft Teams agent) discover and use Sazabi observability tools to
-    investigate production issues in natural language.
+  description: The Sazabi MCP server lets agents (e.g. Slackbot, the Sazabi Slack app, and the Microsoft
+    Teams agent) discover and use Sazabi observability tools to investigate production issues in natural
+    language.
   transport: http
   distribution: hosted
-  access: >-
-    Reached through the Sazabi Slack/Teams integrations; requires a Sazabi
-    account. No public unauthenticated endpoint is documented.
-# Documented capability categories (from docs.sazabi.com/integrations/slack.md):
-# "let it use the Sazabi MCP server to query logs, check issues, inspect
-#  projects, and find available Sazabi operations."
+  access: Reached through the Sazabi Slack/Teams integrations; requires a Sazabi account. No public unauthenticated
+    endpoint is documented.
 capabilities:
-  - name: query_logs
-    description: Query production logs (stdout/stderr) across connected systems.
-  - name: check_issues
-    description: Check detected issues and their status.
-  - name: inspect_projects
-    description: Inspect projects and their observability context.
-  - name: discover_operations
-    description: Discover the available Sazabi operations/tools at runtime.
-# Sazabi also acts as an MCP CLIENT, connecting to third-party hosted MCP servers
-# (this is consumption, not a Sazabi-published API):
+- name: query_logs
+  description: Query production logs (stdout/stderr) across connected systems.
+- name: check_issues
+  description: Check detected issues and their status.
+- name: inspect_projects
+  description: Inspect projects and their observability context.
+- name: discover_operations
+  description: Discover the available Sazabi operations/tools at runtime.
 mcp_connectors:
-  - name: Langfuse
-    docs: https://docs.sazabi.com/mcp/connectors/langfuse.md
-  - name: Resend
-    docs: https://docs.sazabi.com/mcp/connectors/resend.md
-  - name: Custom
-    docs: https://docs.sazabi.com/mcp/connectors/custom
+- name: Langfuse
+  docs: https://docs.sazabi.com/mcp/connectors/langfuse.md
+- name: Resend
+  docs: https://docs.sazabi.com/mcp/connectors/resend.md
+- name: Custom
+  docs: https://docs.sazabi.com/mcp/connectors/custom
+deployment:
+  mode: remote
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
